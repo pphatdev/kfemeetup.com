@@ -17,10 +17,13 @@
   },
   "devDependencies": {
     "@nuxt/test-utils": "^4.0.3",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^25.9.1",
     "@vue/test-utils": "^2.4.10",
     "crossws": "^0.4.5",
     "happy-dom": "^20.9.0",
+    "tailwindcss": "^4.0.0",
     "vitest": "^4.1.7"
   }
 }
