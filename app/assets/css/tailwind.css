@@ -10,14 +10,13 @@
 }
 
 @theme inline {
-
   /* Fonts */
   --font-sans: var(--font-sans);
   --font-aladin: var(--font-aladin);
   --font-srisakdi: var(--font-srisakdi);
   --font-open-sans: var(--font-open-sans);
 
-  /* Colors */
+  /* Design System Theme Colors */
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
@@ -43,6 +42,23 @@
   --color-destructive-accent-foreground: hsl(var(--destructive-accent-foreground));
 }
 
+/* Custom Utility Classes for Brand Gradients & Animations */
+@utility bg-primary-linear {
+  background-image: linear-gradient(135deg, #F9810A, #A75400);
+}
+
+@utility animate-float {
+  animation: float-anim 4s ease-in-out infinite;
+}
+
+@keyframes float-anim {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
 
 @layer base {
   :root {
@@ -51,55 +67,58 @@
     --font-srisakdi: "Srisakdi", system-ui;
     --font-open-sans: "Open Sans", sans-serif;
 
+    /* Base Colors */
     --background: 0 0% 100%;
     --foreground: 240 10% 11%;
 
-    --primary: 30 100% 22%;
-    --primary-foreground: 35 100% 94%;
-  
-    --primary-muted: 30 100% 44%;
+    /* Primary Key (Lighter, Vibrant Warm Amber-Brown Theme) */
+    --primary: 29 95% 42%;            /* #D26500 - Lighter Warm Coffee Amber */
+    --primary-foreground: 35 100% 94%; /* #FFF3E2 */
+    --primary-muted: 29 95% 55%;       /* #FA8A1B */
     --primary-muted-foreground: 35 100% 94%;
-    --primary-accent: 30 100% 66%;
+    --primary-accent: 27 100% 55%;      /* #FF881A - Vibrant Amber Highlight */
     --primary-accent-foreground: 35 100% 94%;
 
-    --secondary: 121 100% 22%;
+    /* Secondary Key (Forest Green Theme) */
+    --secondary: 121 100% 28%;
     --secondary-foreground: 35 100% 94%;
     --secondary-muted: 121 100% 44%;
     --secondary-muted-foreground: 35 100% 94%;
     --secondary-accent: 121 100% 66%;
     --secondary-accent-foreground: 35 100% 94%;
 
-    /* --destructive: 0 84.2% 60.2%;
+    /* Destructive Key */
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --destructive-muted: 240 3.8% 46.1%;
-    --destructive-muted-foreground: 163 96% 25%;
-    --destructive-accent: 240 5.9% 10%;
-    --destructive-accent-foreground: 163 96% 25%; */
+    --destructive-muted: 0 84.2% 70%;
+    --destructive-muted-foreground: 0 0% 98%;
+    --destructive-accent: 0 84.2% 45%;
+    --destructive-accent-foreground: 0 0% 98%;
   }
 
-  /* .dark {
+  .dark {
     --background: 240 10% 11%;
-    --foreground: 0 0% 100%;
+    --foreground: 0 0% 98%;
 
-    --primary: 163 96% 25%;
-    --primary-foreground: 0 0% 98%;
-    --primary-muted: 240 3.8% 46.1%;
-    --primary-muted-foreground: 163 96% 25%;
-    --primary-accent: 240 5.9% 10%;
-    --primary-accent-foreground: 163 96% 25%;
+    --primary: 29 100% 60%;
+    --primary-foreground: 30 100% 12%;
+    --primary-muted: 29 100% 48%;
+    --primary-muted-foreground: 35 100% 94%;
+    --primary-accent: 27 100% 70%;
+    --primary-accent-foreground: 30 100% 10%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --secondary-muted: 240 3.8% 46.1%;
-    --secondary-muted-foreground: 163 96% 25%;
-    --secondary-accent: 240 5.9% 10%;
-    --secondary-accent-foreground: 163 96% 25%;
+    --secondary: 121 100% 66%;
+    --secondary-foreground: 121 100% 10%;
+    --secondary-muted: 121 100% 44%;
+    --secondary-muted-foreground: 35 100% 94%;
+    --secondary-accent: 121 100% 75%;
+    --secondary-accent-foreground: 121 100% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --destructive-muted: 240 3.8% 46.1%;
-    --destructive-muted-foreground: 163 96% 25%;
-    --destructive-accent: 240 5.9% 10%;
-    --destructive-accent-foreground: 163 96% 25%;
-  } */
+    --destructive-muted: 0 84.2% 45%;
+    --destructive-muted-foreground: 0 0% 98%;
+    --destructive-accent: 0 84.2% 35%;
+    --destructive-accent-foreground: 0 0% 98%;
+  }
 }

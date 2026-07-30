@@ -1,0 +1,47 @@
+<svg width="367" height="357" viewBox="0 0 367 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="primary-linear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(30, 100%, 22%)"/>
+      <stop offset="100%" stop-color="hsl(30, 100%, 66%)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Card Background (Primary-foreground: #FFF3E2) -->
+  <rect width="367" height="357" rx="16" fill="#FFF3E2"/>
+  
+  <!-- 1. Primary Badge (Primary fill: #703800, Text: #FFF3E2) -->
+  <g>
+    <rect x="75" y="26" width="67" height="32" rx="10" fill="#703800"/>
+    <text x="86" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#FFF3E2">Primary</text>
+  </g>
+  
+  <!-- 2. Secondary Badge (Secondary fill: #007002, Text: #FFF3E2) -->
+  <g>
+    <rect x="75" y="72" width="85" height="32" rx="10" fill="#007002"/>
+    <text x="86" y="93" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#FFF3E2">Secondary</text>
+  </g>
+  
+  <!-- 3. Background Badge (Background fill: #FFFFFF, Text: #19191D) -->
+  <g>
+    <rect x="75" y="118" width="93" height="32" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="86" y="139" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#19191D">Background</text>
+  </g>
+  
+  <!-- 4. Primary-foreground Badge (Primary-foreground fill: #FFF3E2, Text & Border: #703800) -->
+  <g>
+    <rect x="75" y="164" width="140" height="32" rx="10" fill="#FFF3E2" stroke="#703800" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="86" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#703800">Primary-foreground</text>
+  </g>
+  
+  <!-- 5. Secondary-foreground Badge (Secondary-foreground fill: #FFF3E2, Text & Border: #007002) -->
+  <g>
+    <rect x="75" y="210" width="159" height="32" rx="10" fill="#FFF3E2" stroke="#007002" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="86" y="231" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#007002">Secondary-foreground</text>
+  </g>
+  
+  <!-- 6. Primary-linear Badge (Primary Linear Gradient fill, Text: #FFF3E2) -->
+  <g>
+    <rect x="75" y="301" width="107" height="32" rx="10" fill="url(#primary-linear)"/>
+    <text x="86" y="322" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#FFF3E2">Primary-linear</text>
+  </g>
+</svg>
