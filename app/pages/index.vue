@@ -3,15 +3,14 @@
     <NuxtRouteAnnouncer />
 
     <!-- 1280x832 Responsive Canvas Layout -->
-    <div class="w-full max-w-[1280px] min-h-[832px] bg-primary-foreground rounded-3xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between p-6 sm:p-12 lg:p-16 gap-10">
+    <div class="w-full max-w-7xl min-h-208 bg-primary-foreground rounded-3xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between p-6 sm:p-12 lg:p-16 gap-10">
       
       <!-- Left Hero Section with Khmer Typography & Glassmorphic Card -->
-      <div class="w-full lg:w-3/5 flex flex-col items-start justify-center my-auto gap-8 z-10">
+      <div class="w-full order-last lg:order-first lg:w-3/5 flex flex-col items-start justify-center my-auto gap-8 z-10">
         
         <!-- Brand Header Logo using /logo.svg -->
         <div class="flex items-center gap-3">
-          <img src="/logo.svg" alt="K'Fe Meetup Logo" class="w-10 h-10 object-contain rounded-xl shadow-xs" />
-          <span class="text-xl font-black text-primary tracking-tight">K'Fe Meetup</span>
+          <img src="/logo.svg" alt="K'Fe Meetup Logo" class="w-10 h-10 object-contain border border-primary/20 rounded-xl" />
         </div>
 
         <!-- Khmer Main Headline Copy -->
@@ -19,42 +18,38 @@
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-primary leading-[1.3] tracking-tight font-['Kantumruy_Pro',sans-serif]">
             អភិវឌ្ឍន៍ខ្លួន<br />
             និងជួយគ្នាទៅវិញទៅមក<br />
-            ក្នុងនាមជា <span class="text-primary-accent underline underline-offset-8 decoration-primary-accent/40 decoration-4">community.</span>
+            ក្នុងនាមជា<br /> <span class="text-primary-accent underline underline-offset-8 decoration-primary-accent/40 decoration-4">community.</span>
           </h1>
         </div>
 
         <!-- Transparent Glassmorphic Card with Floating Coffee Cup -->
-        <div class="w-full max-w-xl bg-white/60 backdrop-blur-md border border-white/90 rounded-2xl p-5 sm:p-6 shadow-md flex flex-col gap-4 transition-all hover:bg-white/70 relative">
+        <div class="w-full max-w-xl bg-white/60 backdrop-blur-md border border-white/90 rounded-2xl p-5 sm:p-6 flex flex-col gap-4 transition-all hover:bg-white/70 relative">
           
           <!-- Floating Coffee Cup Image on Top Right -->
           <img 
             src="/coffeecup.png" 
             alt="Coffee Cup floating element" 
-            class="absolute -top-12 -right-6 sm:-top-16 sm:-right-8 w-24 sm:w-32 h-auto object-contain drop-shadow-xl pointer-events-none animate-float z-20"
+            class="absolute -top-12 -right-6 sm:-top-16 sm:-right-8 w-24 sm:w-44 h-auto object-contain drop-shadow-xl pointer-events-none animate-float z-20"
           />
 
           <!-- User Profile Section (Top of quotes) -->
           <div class="flex items-center gap-3.5 pr-12 sm:pr-16">
             <!-- Avatar Badge -->
-            <div class="w-11 h-11 rounded-full bg-primary-linear p-0.5 shadow-xs flex-shrink-0">
+            <div class="w-11 h-11 rounded-full bg-primary-linear p-0.5 shadow-xs shrink-0">
               <div class="w-full h-full rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
                 SL
               </div>
             </div>
-            
             <div class="flex flex-col">
-              <span class="text-sm font-bold text-primary">Sophat LEAT</span>
+              <span class="text-sm font-bold text-black">Sophat LEAT</span>
               <span class="text-xs font-semibold text-primary-accent">@pphat</span>
             </div>
           </div>
 
-          <!-- Subtle Separator -->
-          <div class="w-full h-[1px] bg-primary/10"></div>
-
           <!-- Tagline Quote Container with SVG Quote Icon at Bottom Left -->
           <div class="flex flex-col gap-2">
             <p class="text-sm sm:text-base text-neutral-800 leading-relaxed font-medium">
-              “K’Fe Meetup just built for helping developers connect, grow together, and build meaningful communities.”
+              K’Fe Meetup just built for helping developers connect, grow together, and build meaningful communities.
             </p>
 
             <!-- SVG Quote Icon at Bottom Left of Quote -->
